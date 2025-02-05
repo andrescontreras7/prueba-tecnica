@@ -36,7 +36,9 @@ async function getVehicleModels(makeId, year) {
 }
 
   export default async function CarPage({ params }) {
-    const data = await getVehicleModels(params.makeId, params.year);
+    const { makeId, year } =  params; 
+
+    const data = await getVehicleModels(makeId, year);
 
 
     return (
