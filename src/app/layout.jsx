@@ -20,9 +20,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+         style={{ fontFamily: "'JetBrains Mono', monospace" }}
+        className={` bg-[#0f172a]` }
       >
+     
         {children}
+        
       </body>
     </html>
   );
